@@ -13,3 +13,5 @@
 !systemd/
 !udev/
 !vim/
+!default/
+
