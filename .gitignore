@@ -14,4 +14,4 @@
 !udev/
 !vim/
 !default/
-
+!locale.gen
