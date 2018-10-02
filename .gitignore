@@ -16,4 +16,4 @@
 !sshguard/
 !default/
 !locale.gen
-
+!scripts/
