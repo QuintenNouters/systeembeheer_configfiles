@@ -13,5 +13,7 @@
 !systemd/
 !udev/
 !vim/
+!sshguard/
 !default/
 !locale.gen
+
