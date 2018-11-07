@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinte-nnouters. (
-			      5		; Serial
+			      8		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -13,5 +13,5 @@ $TTL	300
 @	IN	NS	ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
 www	IN	A	193.191.177.174
-@	IN	A	127.0.0.1
-@	IN	AAAA	::1
+test	IN	A	193.191.177.254
+ns	IN	A	193.191.177.174	

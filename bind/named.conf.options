@@ -20,8 +20,8 @@ options {
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
 	//========================================================================
 	dnssec-validation auto;
-	allow-query {any};
-	allow-recursion {self; others;};
+	allow-query {any;};
+	allow-recursion {any;};
 	recursion yes;
 
 
