@@ -2,15 +2,16 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	300
-@	IN	SOA	ns.quintennouters.sb.uclllabs.be. root.quintennouters. (
-			      2		; Serial
+@	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinte-nnouters. (
+			      5		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			    300 )	; Negative Cache TTL
 ;
-@	IN	NS	ns.quintennouters.sb.uclllabs.be.
+@	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
 @	IN	NS	ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
+www	IN	A	193.191.177.174
 @	IN	A	127.0.0.1
 @	IN	AAAA	::1
