@@ -7,7 +7,7 @@
 //include "/etc/bind/zones.rfc1918";
 zone "quinten-nouters.sb.uclllabs.be" {
 	type master;
-	file "/etc/bind/db.quinten-nouters.sb.uclllabs.be";
+	file "/etc/bind/zone/db.quinten-nouters.sb.uclllabs.be";
 	also-notify {193.191.177.4; 193.191.177.254;};
 	allow-transfer {193.191.177.4; 193.191.177.254;};
 };
