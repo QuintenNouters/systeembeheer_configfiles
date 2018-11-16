@@ -1,1 +1,27 @@
 #! /bin/bash
+
+if [ $(id -u) != 0 ];
+	then echo "you are not running it as root"; exit;
+fi;
+
+if [ "$1" == "" ];
+	then echo "no options given, please give some options to make a new record"; exit;
+fi;
+
+if [ "$1" == "-t" ];
+	then
+	if [ "$2" == "A" ];
+		then echo "$3.$4	IN	A	$4"; exit;
+	fi;
+
+	if [ "$2" == "CNAME" ];
+		then echo "$3	IN	CNAME	$4"; exit;
+	fi;
+
+	if [ "$2" == "MX" ];
+		then echo "@	IN	MX	10 
+mx	IN	A	$4"; exit;
+	exit;
+	fi;
+fi;
+
