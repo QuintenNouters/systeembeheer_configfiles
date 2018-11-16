@@ -25,6 +25,6 @@ echo "\$TTL 300
 ;
 @	IN	NS	ns.$1.quinten.nouters.sb.uclllabs.be.
 @	IN	NS	ns.quinten-nouter.sb.uclllabs.be.
-ns	IN	A	193.191.177.225"; >> /etc/scripts/$1.quinten-nouters.sb.uclllabs.be 
+ns	IN	A	193.191.177.225" >> /etc/bind/zone/$1.quinten-nouters.sb.uclllabs.be; 
 
 echo "$1	IN	NS	ns.quinten-nouters.sb.uclllabs.be." >> /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be;
