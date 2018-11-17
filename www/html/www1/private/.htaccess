@@ -1,0 +1,4 @@
+AuthUserFile /etc/www/html/www1/.htpasswd
+AuthName 'Secure Site'
+AuthType Basic
+Require valid-user
