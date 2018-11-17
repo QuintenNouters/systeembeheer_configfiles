@@ -1,0 +1,15 @@
+#! /bin/bash
+
+if [ $(id -u) != 0 ];
+	then echo "you are not running it as root, use sudo"; exit;
+fi;
+
+if [ "$1" == "" ];
+	then echo "no vhost name specified, do http_add_vhost <name of vhost>; exit;
+fi;
+
+echo "<VirtualHost *:80>
+	ServerName $1.quinten-nouters.sb.uclllabs.be
+	DocumentRoot /var/www/html/$1
+	ErrorLog \${APACHE_LOG_DIR}/$1-error.log
+	CustomLog \${APACHE_LOG_DIR}/$1-access.log"
