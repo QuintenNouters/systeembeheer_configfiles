@@ -1,18 +1,14 @@
 #! /bin/bash
 
-if [ $(id -u) != 0 ]; then
-	echo "you are not running it as root, use sudo"; exit;
+if [ $(id -u) != 0 ];
+	then echo "you are not running it as root, use sudo"; exit;
 fi;
 
-if [ "$1" == "" ]; then
-	echo "no vhost name specified, do http_add_vhost <name of vhost>; exit;
+if [ "$1" == "" ];
+	then echo "no vhost name specified, do http_add_vhost <name of vhost>"; exit;
 fi;
 
-if [ "$(dig $1 +short)" == "" ];
-	then echo "no output for dig $1"; exit;
-fi;
-
-IFS='.' read -r -a array <<< $1
+IFS='.' read -r -a array <<< $1;
 vhostname=${array[0]};
 
 touch /etc/apache2/sites-available/$vhostname.conf;
@@ -21,8 +17,8 @@ echo "<VirtualHost *:80>
 	ServerName $1
 	DocumentRoot /etc/www/html/$vhostname
 	ErrorLog /etc/www/html/$vhostname/$vhostname-error.log
-	CustomLog /etc/www/html/$vhostname/$vhostname-access.log
-</VirtualHost>"  >> /etc/apache2/sites-available/$vhostname.conf;
+	CustomLog /etc/www/html/$vhostname/$vhostname-access.log combined
+</VirtualHost>"  > /etc/apache2/sites-available/$vhostname.conf;
 
 mkdir /etc/www/html/$vhostname;
 
@@ -30,9 +26,11 @@ touch /etc/www/html/$vhostname/index.html;
 echo "<!DOCTYPE html PUBLIC>
 <html>
 <body>
-<p>default page for vhost $vhostname</p>
+<p>default pager vhost $vhostname</p>
 </body>
-</html>" >> /etc/www/html/$vhostname/index.html;
+</html>" > /etc/www/html/$vhostname/index.html;
+
+source dns_add_record -t A $vhostname 193.191.177.174 quinten-nouters.sb.uclllabs.be
 
 a2ensite $vhostname.conf;
 systemctl restart apache2;
