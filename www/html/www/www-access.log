@@ -7,3 +7,5 @@
 109.134.170.54 - - [18/Nov/2018:22:44:57 +0100] "GET / HTTP/1.1" 200 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 109.134.170.54 - - [18/Nov/2018:22:44:59 +0100] "GET / HTTP/1.1" 200 511 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 109.134.170.54 - - [18/Nov/2018:22:45:06 +0100] "GET / HTTP/1.1" 200 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+198.59.178.72 - - [18/Nov/2018:22:51:30 +0100] "GET / HTTP/1.1" 200 3712 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0"
+23.27.144.106 - - [18/Nov/2018:22:52:26 +0100] "GET / HTTP/1.1" 200 3712 "-" "Mozilla/5.0 (Linux; Android 5.1.1; SM-G928X Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"

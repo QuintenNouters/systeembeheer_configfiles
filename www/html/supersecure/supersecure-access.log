@@ -12,3 +12,7 @@
 109.134.170.54 - - [18/Nov/2018:22:38:40 +0100] "GET / HTTP/1.1" 200 432 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 109.134.170.54 - - [18/Nov/2018:22:38:51 +0100] "GET / HTTP/1.1" 200 432 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 109.134.170.54 - - [18/Nov/2018:22:38:53 +0100] "GET / HTTP/1.1" 200 431 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+198.59.127.35 - - [18/Nov/2018:22:51:20 +0100] "GET / HTTP/1.1" 200 3632 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+109.134.170.54 - - [18/Nov/2018:22:54:39 +0100] "GET / HTTP/1.1" 301 653 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [18/Nov/2018:22:54:39 +0100] "GET / HTTP/1.1" 200 3874 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [18/Nov/2018:22:54:39 +0100] "GET /favicon.ico HTTP/1.1" 404 563 "https://supersecure.quinten-nouters.sb.uclllabs.be/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"

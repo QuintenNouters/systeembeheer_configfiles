@@ -31,3 +31,8 @@
 109.134.170.54 - - [18/Nov/2018:22:20:48 +0100] "GET /favicon.ico HTTP/1.1" 404 524 "http://ns.quinten-nouters.sb.uclllabs.be/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 109.134.170.54 - - [18/Nov/2018:22:40:06 +0100] "GET / HTTP/1.1" 200 427 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 109.134.170.54 - - [18/Nov/2018:22:41:58 +0100] "GET / HTTP/1.1" 200 427 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+198.59.178.145 - - [18/Nov/2018:22:51:34 +0100] "GET / HTTP/1.1" 200 3627 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+41.191.205.24 - - [18/Nov/2018:22:54:21 +0100] "GET / HTTP/1.0" 301 579 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+109.134.170.54 - - [18/Nov/2018:22:54:24 +0100] "GET / HTTP/1.1" 301 638 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [18/Nov/2018:22:54:24 +0100] "GET / HTTP/1.1" 200 3853 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [18/Nov/2018:22:54:25 +0100] "GET /favicon.ico HTTP/1.1" 404 558 "https://secure.quinten-nouters.sb.uclllabs.be/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
