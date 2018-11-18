@@ -1,5 +1,7 @@
 #! /bin/bash
 
+serial=$(date +%y%m%d%H%M);
+
 if [ $(id -u) != 0 ];
 	then echo "you are not running it as root"; exit;
 fi;
@@ -9,19 +11,35 @@ if [ "$1" == "" ];
 fi;
 
 if [ "$1" == "-t" ];
-	then
-	if [ "$2" == "A" ];
-		then echo "$3.$4	IN	A	$4"; exit;
+	then if [ "$2" == "A" ];
+		then if [ "$3" != "" ] && [ "$4" != "" ] && [ "$5" != "" ];
+			then echo "$3	IN	A	$4" >> /etc/bind/zone/db.$5;
+			sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/zone/db.$5;
+		else
+			echo "give more options, 5 options needed";
+		fi;
+	elif [ "$2" == "CNAME" ];
+		then if [ "$3" != "" ] && [ "$4" != "" ];
+			then echo "$3	IN	CNAME	$4." >> /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be
+			sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/db.quinten-nouters.sb.uclllabs.be
+		else
+			echo "give more options, 4 options needed";
+		fi;
+	elif [ "$2" == "MX" ];
+		then if [ "$3" != "" ] && [ "$4" != "" ] && [ "$5" != "" ];
+			then echo "$3	IN	A	$4" >> /etc/bind/zone/db.$5;
+			echo "$5	IN	MX	10 $3.$5." >> /etc/bind/zone/db.$5;
+			sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/zone/db.$5;
+		else
+			echo "give ore options, 5 options needed";
+		fi;
+	else
+		echo "$2 is not a correct recordtype, please use A, CNAME or MX";
 	fi;
-
-	if [ "$2" == "CNAME" ];
-		then echo "$3	IN	CNAME	$4"; exit;
-	fi;
-
-	if [ "$2" == "MX" ];
-		then echo "@	IN	MX	10 
-mx	IN	A	$4"; exit;
-	exit;
-	fi;
+else
+	echo "$1	IN	A	$2" >> /etc/bind/zone/db.$3
+	sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/zone/db.$3
 fi;
+
+systemctl reload bind9;
 
