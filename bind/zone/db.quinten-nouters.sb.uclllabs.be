@@ -2,8 +2,8 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	300
-@	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinte-nnouters. (
-	1811182144	; Serial
+@	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinten-nouters.sb.uclllabs.be (
+	1811182148	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -12,11 +12,13 @@ $TTL	300
 @	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
 @	IN	NS	ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
+@	IN	A	193.191.177.174
 www	IN	A	193.191.177.174
 www1	IN	A	193.191.177.174
 www2	IN	A	193.191.177.174
 test	IN	A	193.191.177.254
 ns	IN	A	193.191.177.174
 testhttp	IN	A	193.191.177.174
+quinten-nouters.sb.uclllabs.be.	CAA	0 issue "letsencrypt.org"
 secure	IN	A	193.191.177.174
 supersecure	IN	A	193.191.177.174
