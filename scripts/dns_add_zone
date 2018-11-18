@@ -1,5 +1,7 @@
 #! /bin/bash
 
+serial=$(date +%y%m%d%H%M);
+
 if [ $(id -u) != 0 ];
 	then echo "you are not running it as root"; exit;
 fi;
@@ -11,20 +13,25 @@ fi;
 echo "zone \"$1.quinten-nouters.sb.uclllabs.be\" {
 	type master;
 	file \"/etc/bind/zone/$1.quinten-nouters.sb.uclllabs.be\";
+	also-notify {193.191.177.4; 193.191.177.254;};
+	allow-transfer {193.191.177.4; 193.191.177.254;};
 };" >> /etc/bind/named.conf.local;
 
-touch /etc/bind/zone/$1.quinten-nouters.sb.uclllabs.be;
+touch /etc/bind/zone/db.$1.quinten-nouters.sb.uclllabs.be;
 
 echo "\$TTL	300
 @	IN	SOA	ns.$1.quinten-nouters.sb.uclllabs.be. root.$1.quinten-nouters.sb.uclllabs.be (
-	1	; Serial
-	604800	; Refresh
+	$serial	; Serial
+	300	; Refresh
 	86400	; Retry
 	2419200	; Expire
 	300 )	; Negative Cache TTL
 ;
 @	IN	NS	ns.$1.quinten.nouters.sb.uclllabs.be.
 @	IN	NS	ns.quinten-nouter.sb.uclllabs.be.
-ns	IN	A	193.191.177.174" >> /etc/bind/zone/$1.quinten-nouters.sb.uclllabs.be; 
+ns	IN	A	193.191.177.174" >> /etc/bind/zone/db.$1.quinten-nouters.sb.uclllabs.be;
 
-echo "$1	IN	NS	ns.quinten-nouters.sb.uclllabs.be." >> /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be;
+echo "$1.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be." >> /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be;
+sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be;
+
+systemctl reload bind9;
