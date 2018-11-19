@@ -1,3 +1,4 @@
 [Sat Nov 17 16:52:03.354920 2018] [authz_core:error] [pid 12660] [client 109.134.170.54:50566] AH01630: client denied by server configuration: /etc/www/html/www2/toupper.php
 [Sat Nov 17 16:59:56.813700 2018] [authz_core:error] [pid 12838] [client 109.134.170.54:50580] AH01630: client denied by server configuration: /etc/www/html/www2/toupper.php
 [Sat Nov 17 17:00:42.855153 2018] [authz_core:error] [pid 12842] [client 109.134.170.54:50588] AH01630: client denied by server configuration: /etc/www/html/www2/
+[Mon Nov 19 20:51:08.929104 2018] [:error] [pid 46710] [client 109.134.170.54:60966] PHP Notice:  Undefined index: code in /etc/www/html/www2/toupper.php on line 4, referer: http://www2.quinten-nouters.sb.uclllabs.be/
