@@ -1,1 +1,5 @@
 [Mon Nov 19 13:40:25.171506 2018] [:error] [pid 12671] [client 10.23.97.35:54466] PHP Warning:  mysqli::__construct(): (HY000/1698): Access denied for user 'check'@'localhost' in /etc/www/html/www/mysql_check.php on line 8
+[Mon Nov 19 18:15:28.594690 2018] [:error] [pid 30882] [client 193.191.177.174:41276] PHP Parse error:  syntax error, unexpected '=' in /etc/www/html/www/mysql_check.php on line 20
+[Mon Nov 19 18:15:36.627925 2018] [:error] [pid 30883] [client 109.134.170.54:58402] PHP Parse error:  syntax error, unexpected '=' in /etc/www/html/www/mysql_check.php on line 20
+[Mon Nov 19 18:15:41.301227 2018] [:error] [pid 30881] [client 109.134.170.54:58403] PHP Parse error:  syntax error, unexpected '=' in /etc/www/html/www/mysql_check.php on line 20
+[Mon Nov 19 18:15:51.649373 2018] [:error] [pid 30884] [client 109.134.170.54:58405] PHP Parse error:  syntax error, unexpected '=' in /etc/www/html/www/mysql_check.php on line 20

@@ -11,13 +11,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM log";
+$sql = "SELECT * FROM log ORDER BY 1 desc limit 1;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "date: " . $row["date"]. " - text: " . $row["text"]. "<br>";
+	$name = $row["text"];
+        echo "$name";
     }
 } else {
     echo "0 results";
