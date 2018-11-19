@@ -138,3 +138,7 @@
 193.191.177.6 - check [19/Nov/2018:14:05:56 +0100] "GET /private/ HTTP/1.1" 200 1156 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
 10.23.97.35 - - [19/Nov/2018:14:14:55 +0100] "GET / HTTP/1.1" 200 508 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0"
 10.23.97.35 - - [19/Nov/2018:14:14:56 +0100] "GET /favicon.ico HTTP/1.1" 404 526 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0"
+193.191.177.6 - - [19/Nov/2018:15:05:54 +0100] "GET / HTTP/1.1" 200 482 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+193.191.177.6 - - [19/Nov/2018:15:05:54 +0100] "GET / HTTP/1.1" 200 482 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+193.191.177.6 - - [19/Nov/2018:15:05:54 +0100] "GET /private/ HTTP/1.1" 401 710 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+193.191.177.6 - check [19/Nov/2018:15:05:54 +0100] "GET /private/ HTTP/1.1" 200 1156 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
