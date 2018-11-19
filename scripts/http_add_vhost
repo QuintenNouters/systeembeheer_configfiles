@@ -15,7 +15,7 @@ touch /etc/apache2/sites-available/$vhostname.conf;
 
 echo "<VirtualHost *:80>
 	ServerName $1
-	DocumentRoot /etc/www/html/$vhostname
+	DocumentRoot /etc/www/html/$vhostname/
 	ErrorLog /etc/www/html/$vhostname/$vhostname-error.log
 	CustomLog /etc/www/html/$vhostname/$vhostname-access.log combined
 </VirtualHost>"  > /etc/apache2/sites-available/$vhostname.conf;

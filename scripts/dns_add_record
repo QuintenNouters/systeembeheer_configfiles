@@ -21,7 +21,7 @@ if [ "$1" == "-t" ];
 	elif [ "$2" == "CNAME" ];
 		then if [ "$3" != "" ] && [ "$4" != "" ];
 			then echo "$3	IN	CNAME	$4." >> /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be
-			sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/db.quinten-nouters.sb.uclllabs.be
+			sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/zone/db.quinten-nouters.sb.uclllabs.be
 		else
 			echo "give more options, 4 options needed";
 		fi;

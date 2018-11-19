@@ -1,0 +1,1 @@
+[Mon Nov 19 13:40:25.171506 2018] [:error] [pid 12671] [client 10.23.97.35:54466] PHP Warning:  mysqli::__construct(): (HY000/1698): Access denied for user 'check'@'localhost' in /etc/www/html/www/mysql_check.php on line 8
