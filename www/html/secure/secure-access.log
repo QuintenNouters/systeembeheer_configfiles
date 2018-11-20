@@ -220,3 +220,7 @@
 193.191.177.6 - - [20/Nov/2018:16:08:43 +0100] "GET /jjDItevh HTTP/1.1" 301 619 "-" "-"
 193.191.177.6 - - [20/Nov/2018:17:08:18 +0100] "\n" 400 3351 "-" "-"
 193.191.177.6 - - [20/Nov/2018:17:08:18 +0100] "GET /8aLri5yQ HTTP/1.1" 301 619 "-" "-"
+109.134.170.54 - - [20/Nov/2018:18:38:48 +0100] "GET / HTTP/1.1" 301 640 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [20/Nov/2018:18:38:48 +0100] "GET / HTTP/1.1" 200 3853 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [20/Nov/2018:18:38:49 +0100] "GET /favicon.ico HTTP/1.1" 404 558 "https://secure.quinten-nouters.sb.uclllabs.be/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+184.105.139.70 - - [20/Nov/2018:18:48:16 +0100] "GET / HTTP/1.1" 200 3538 "-" "-"

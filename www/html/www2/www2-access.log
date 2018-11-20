@@ -68,3 +68,5 @@
 193.191.177.6 - - [20/Nov/2018:16:08:42 +0100] "GET /toupper.php?code=rRT5MCLWVfy38zyUw HTTP/1.1" 200 383 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
 193.191.177.6 - - [20/Nov/2018:17:08:17 +0100] "GET /toupper.php?code=CMF7638xssyxiTGb HTTP/1.1" 200 382 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
 193.191.177.6 - - [20/Nov/2018:18:08:20 +0100] "GET /toupper.php?code=871Hq91FQsgmqMdEcEiA HTTP/1.1" 200 386 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+109.134.170.54 - - [20/Nov/2018:18:54:43 +0100] "GET /toupper.php?code=lmtpd HTTP/1.1" 200 416 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+109.134.170.54 - - [20/Nov/2018:18:54:43 +0100] "GET /favicon.ico HTTP/1.1" 404 526 "http://www2.quinten-nouters.sb.uclllabs.be/toupper.php?code=lmtpd" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
