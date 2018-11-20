@@ -28,7 +28,7 @@ if [ "$1" == "-t" ];
 	elif [ "$2" == "MX" ];
 		then if [ "$3" != "" ] && [ "$4" != "" ] && [ "$5" != "" ];
 			then echo "$3	IN	A	$4" >> /etc/bind/zone/db.$5;
-			echo "$5	IN	MX	10 $3.$5." >> /etc/bind/zone/db.$5;
+			echo "$5.	IN	MX	10 $3.$5." >> /etc/bind/zone/db.$5;
 			sed -i "s/.*Serial/	$serial	; Serial/" /etc/bind/zone/db.$5;
 		else
 			echo "give ore options, 5 options needed";
