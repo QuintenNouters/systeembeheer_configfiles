@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinten-nouters.sb.uclllabs.be (
-	1811201808	; Serial
+	1811202008	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -26,6 +26,8 @@ mx	IN	A	193.191.177.174
 quinten-nouters.sb.uclllabs.be.	IN	MX	10 mx.quinten-nouters.sb.uclllabs.be.
 subzoneeth2ie.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
 subzonethaud1.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
+phaey1	IN	A	193.191.177.174
+phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
