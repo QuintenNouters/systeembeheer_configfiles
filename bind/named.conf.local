@@ -8,8 +8,12 @@
 zone "quinten-nouters.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/zone/db.quinten-nouters.sb.uclllabs.be";
-	also-notify {193.191.177.4; 193.191.177.254;};
-	allow-transfer {193.191.177.4; 193.191.177.254;};
+	also-notify {193.191.177.4; 193.191.177.254; 193.191.177.220;};
+	allow-transfer {193.191.177.4; 193.191.177.254; 193.191.177.220;};
+};
+zone "joren-vermeir.sb.uclllabs.be"{
+	type slave;
+	masters {193.191.177.220;};
 };
 zone "subzoneeth2ie.quinten-nouters.sb.uclllabs.be" {
 	type master;
