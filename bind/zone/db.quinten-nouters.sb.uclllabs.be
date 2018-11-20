@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinten-nouters.sb.uclllabs.be (
-	1811192209	; Serial
+	1811192210	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -23,4 +23,4 @@ quinten-nouters.sb.uclllabs.be.	CAA	0 issue "letsencrypt.org"
 secure	IN	A	193.191.177.174
 supersecure	IN	A	193.191.177.174
 mx	IN	A	193.191.177.174
-quinten-nouters.sb.uclllabs.be	IN	MX	10 mx.quinten-nouters.sb.uclllabs.be.
+quinten-nouters.sb.uclllabs.be.	IN	MX	10 mx.quinten-nouters.sb.uclllabs.be.
