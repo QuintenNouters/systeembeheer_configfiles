@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinten-nouters.sb.uclllabs.be (
-	1811202008	; Serial
+	1811210908	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -33,3 +33,5 @@ phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
+subzoneohsh5k.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
+ohg8um	IN	A	193.191.177.174
