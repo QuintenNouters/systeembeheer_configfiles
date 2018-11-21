@@ -98,3 +98,7 @@
 193.191.177.6 - - [21/Nov/2018:04:06:47 +0100] "GET /mysql_check.php HTTP/1.1" 200 177 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
 193.191.177.6 - - [21/Nov/2018:05:06:44 +0100] "GET /mysql_check.php HTTP/1.1" 200 177 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
 193.191.177.6 - - [21/Nov/2018:06:06:45 +0100] "GET /mysql_check.php HTTP/1.1" 200 177 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+193.191.177.6 - - [21/Nov/2018:07:06:44 +0100] "GET /mysql_check.php HTTP/1.1" 200 177 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+109.134.170.54 - - [21/Nov/2018:07:27:38 +0100] "GET / HTTP/1.1" 200 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+193.191.177.6 - - [21/Nov/2018:08:07:03 +0100] "GET /mysql_check.php HTTP/1.1" 200 174 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
+193.191.177.6 - - [21/Nov/2018:08:17:06 +0100] "GET /mysql_check.php HTTP/1.1" 200 174 "-" "check_http/v2.1.1 (monitoring-plugins 2.1.1)"
