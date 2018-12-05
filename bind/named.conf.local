@@ -27,3 +27,9 @@ zone "subzonethaud1.quinten-nouters.sb.uclllabs.be" {
 	also-notify {193.191.177.4; 193.191.177.254;};
 	allow-transfer {193.191.177.4; 193.191.177.254;};
 };
+zone "subzoneohsh5k.quinten-nouters.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zone/db.subzoneohsh5k.quinten-nouters.sb.uclllabs.be";
+	also-notify {193.191.177.4; 193.191.177.254;};
+	allow-transfer {193.191.177.4; 193.191.177.254;};
+};
