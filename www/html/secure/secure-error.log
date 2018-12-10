@@ -1,0 +1,2 @@
+[Mon Dec 10 05:01:59.249168 2018] [:error] [pid 15537] [client 194.147.32.109:46382] script '/etc/www/html/secure/about.php' not found or unable to stat
+[Mon Dec 10 15:11:48.621826 2018] [ssl:error] [pid 45301] [client 172.104.153.71:60998] AH02042: rejecting client initiated renegotiation
