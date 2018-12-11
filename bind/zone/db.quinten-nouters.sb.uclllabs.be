@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.quinten-nouters.sb.uclllabs.be. root.quinten-nouters.sb.uclllabs.be (
-	1811210908	; Serial
+	1811210910	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -24,14 +24,10 @@ secure	IN	A	193.191.177.174
 supersecure	IN	A	193.191.177.174
 mx	IN	A	193.191.177.174
 quinten-nouters.sb.uclllabs.be.	IN	MX	10 mx.quinten-nouters.sb.uclllabs.be.
+@	IN	AAAA	2001:6a8:2880:a077::ae
+ns	IN	AAAA	2001:6a8:2880:a077::ae
 subzoneeth2ie.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
 subzonethaud1.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
-phaey1	IN	A	193.191.177.174
-phaey1	IN	A	193.191.177.174
-phaey1	IN	A	193.191.177.174
-phaey1	IN	A	193.191.177.174
-phaey1	IN	A	193.191.177.174
-phaey1	IN	A	193.191.177.174
 phaey1	IN	A	193.191.177.174
 subzoneohsh5k.quinten-nouters.sb.uclllabs.be.	IN	NS	ns.quinten-nouters.sb.uclllabs.be.
 ohg8um	IN	A	193.191.177.174
